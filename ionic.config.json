@@ -1,0 +1,7 @@
+{
+  "name": "speechTest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

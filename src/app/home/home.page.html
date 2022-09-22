@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Text to Speech and Speech to text
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-item>
+        <ion-input [(ngModel)]="myText"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="startRecognition()" *ngIf="!recording">Start speech recognition </ion-button>
+    <ion-button expand="full" (click)="stopRecognition()" *ngIf="recording">Stop speech recognition </ion-button>
+    <ion-button expand="full" (click)="speakText()" *ngIf="!recording">Speak </ion-button>
+</ion-content>
